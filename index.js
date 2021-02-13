@@ -9,6 +9,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use("/api", routes);
 
+app.get("/", (req, res) => {
+  res.status(200).json("Hello World");
+});
 app.listen(port, (err) => {
   if (err) {
     throw err;
