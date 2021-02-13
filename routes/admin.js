@@ -25,10 +25,7 @@ router.post("/", (req, res) => {
 
 // GET LIST OF ADMINS
 
-router.get("/hello", (req, res) => {
-  res.status(200).json("Hello you!");
-});
-router.get("/", (req, res) => {
+/* router.get("/", (req, res) => {
   const sql = "SELECT * FROM admin WHERE name_admin='liljon'";
   connection.query(sql, (err, results) => {
     if (err) {
@@ -41,7 +38,7 @@ router.get("/", (req, res) => {
       res.status(200).json(results);
     }
   });
-});
+}); */
 
 // SIGN IN
 
