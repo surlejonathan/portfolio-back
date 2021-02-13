@@ -1,5 +1,8 @@
 {
   "name": "back",
+  "engines": {
+    "node": "12.x"
+  },
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -13,9 +16,6 @@
     "jsonwebtoken": "^8.5.1",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.7"
-  },
-  "engines": {
-    "node": "12.x"
   },
   "scripts": {
     "start": "node index.js",

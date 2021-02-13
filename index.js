@@ -10,8 +10,9 @@ app.use(cors());
 app.use("/api", routes);
 
 app.get("/", (req, res) => {
-  res.status(200).json("Hello World");
+  res.status(200).json("Hello you!");
 });
+
 app.listen(port, (err) => {
   if (err) {
     throw err;
