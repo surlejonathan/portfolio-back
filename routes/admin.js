@@ -23,23 +23,6 @@ router.post("/", (req, res) => {
   });
 });
 
-// GET LIST OF ADMINS
-
-/* router.get("/", (req, res) => {
-  const sql = "SELECT * FROM admin WHERE name_admin='liljon'";
-  connection.query(sql, (err, results) => {
-    if (err) {
-      res.status(500).json(err.message);
-    } else if (results.length === 0) {
-      res
-        .status(404)
-        .json("No users were found yet. Please try again later...");
-    } else {
-      res.status(200).json(results);
-    }
-  });
-}); */
-
 // SIGN IN
 
 router.post("/login", (req, res) => {
