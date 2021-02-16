@@ -10,6 +10,8 @@ router.post("/", (req, res) => {
     project_name: req.body.project_name,
     project_picture: req.body.project_picture,
     project_presentation: req.body.project_presentation,
+    project_url: req.body.project_url,
+    project_techno: req.body.project_techno,
   };
   return connection.query(sql, data, (err, result) => {
     if (err) {
