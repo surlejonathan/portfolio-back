@@ -26,7 +26,7 @@ router.post("/", (req, res) => {
 // GET LIST OF PROJECTS
 
 router.get("/", (req, res) => {
-  const sql = "SELECT * FROM project ORDER BY project_date ASC";
+  const sql = "SELECT * FROM project ORDER BY project_date DESC";
   connection.query(sql, (err, results) => {
     if (err) {
       res.status(500).json(err.message);
